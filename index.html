@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+  <head>
+    <title>Desafio # 2 - EduIT</title>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+
+    <link href="./styles.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <!-- Comienzo Header -->
+    <header class="Header"></header>
+    <!-- Comienzo Aside -->
+    <aside class="Aside"></aside>
+    <!-- Comienzo Main -->
+    <main class="Main">
+      <section class="section" >
+        <article class='article' >
+          <h1 class="article__title" >
+            Interested in our business pricing?
+          </h1>
+          <p class="article__paragraph" >
+            Fill out the form to view details and we’ll contact you as soon as possible.
+          </p>
+          <form class="article__form" action="ruta_del_servidor" method="post">
+            <!-- Primer campo de ingreso de datos -->
+            <label for="campo1">Campo 1:</label>
+            <input type="text" id="campo1" name="campo1">
+
+            <!-- Segundo campo de ingreso de datos -->
+            <label for="campo2">Campo 2:</label>
+            <input type="text" id="campo2" name="campo2">
+
+            <!-- Primer campo de seleccion de datos -->
+            <label for="lista1">Lista 1:</label>
+            <select id="lista1" name="lista1">
+                <option value="opcion1">Opción 1</option>
+                <option value="opcion2">Opción 2</option>
+            </select>
+
+            <!-- Segundo campo de seleccion de datos -->
+            <label for="lista2">Lista 2:</label>
+            <select id="lista2" name="lista2">
+                <option value="opcion1">Opción 1</option>
+                <option value="opcion2">Opción 2</option>
+            </select>
+
+            <!-- Campo de ingreso de texto -->
+            <label for="texto">Texto:</label>
+            <textarea id="texto" name="texto"></textarea>
+
+            <!-- Boton de enviar informacion -->
+            <input type="submit" value="Enviar">
+          </form>
+        </article>
+      </section>
+    </main>
+    <!-- Comienzo Footer -->
+    <footer class="Footer"></footer>
+  
+  </body>
+</html>

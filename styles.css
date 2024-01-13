@@ -1,0 +1,53 @@
+@charset 'UTF-8' ;
+
+:root {
+  /* Fonts */
+  --f_fontSizeBase : 16px ;
+  --f_lineHeight : 1.5 ;
+  --f_fontWeight : 400 ;
+  --f_fontFamily : 'Be Vietnam Pro', sans-serif ;
+
+  /* Colors */
+  --c_white : #FFFFF ;
+
+}
+
+* {
+  margin : 0 ;
+  padding : 0 ;
+}
+
+html {
+  font-size : var( --f_fontSizeBase ) ;
+  line-height : var( --f_lineHeight ) ;
+  font-weight : var( --f_fontWeight ) ;
+  font-family : var( --f_fontFamily ) ;
+}
+
+/* Comienzo Header */
+.Header {}
+
+
+/* Comienzo Aside */
+.Aside {}
+
+
+/* Comienzo Main */
+.Main {}
+
+.Main .section {}
+
+.Main .section .article {}
+
+.Main .section .article .article__title {
+  font-size : 2rem ;
+}
+
+.Main .section .article .article__paragraph {
+  font-size : 1rem ;
+}
+
+.Main .section .article .article__form {}
+
+/* Comienzo Footer */
+.Footer {}
