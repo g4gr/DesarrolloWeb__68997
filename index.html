@@ -29,34 +29,35 @@
             Fill out the form to view details and we’ll contact you as soon as possible.
           </p>
           <form class="article__form" action="ruta_del_servidor" method="post">
-            <!-- Primer campo de ingreso de datos -->
-            <label for="campo1">Campo 1:</label>
-            <input type="text" id="campo1" name="campo1">
+            <!-- Linea 1 -->
+            <div class="form__container">
+              <label for="campo1">Name</label>
+              <input type="text" id="campo1" name="campo1">
 
-            <!-- Segundo campo de ingreso de datos -->
-            <label for="campo2">Campo 2:</label>
-            <input type="text" id="campo2" name="campo2">
+              <label for="campo2">Company Email</label>
+              <input type="text" id="campo2" name="campo2">
 
-            <!-- Primer campo de seleccion de datos -->
-            <label for="lista1">Lista 1:</label>
-            <select id="lista1" name="lista1">
-                <option value="opcion1">Opción 1</option>
-                <option value="opcion2">Opción 2</option>
-            </select>
+            </div>
+              <!-- Linea 2 --> 
+            <div class="form__container" >
+              <label for="lista1">Company Size</label>
+              <select id="lista1" name="lista1">
+                  <option value="opcion1">50-100 employees</option>
+                  <option value="opcion2">101-500 employees</option>
+              </select>
 
-            <!-- Segundo campo de seleccion de datos -->
-            <label for="lista2">Lista 2:</label>
-            <select id="lista2" name="lista2">
-                <option value="opcion1">Opción 1</option>
-                <option value="opcion2">Opción 2</option>
-            </select>
-
+              <label for="lista2">Subject</label>
+              <select id="lista2" name="lista2">
+                  <option value="opcion1">Building Landing pages</option>
+                  <option value="opcion2">Bla bla</option>
+              </select>
+            </div>
             <!-- Campo de ingreso de texto -->
-            <label for="texto">Texto:</label>
-            <textarea id="texto" name="texto"></textarea>
+            <label for="texto">Message</label>
+            <textarea id="texto" name="texto">500-100 employees</textarea>
 
             <!-- Boton de enviar informacion -->
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Contact Sales">
           </form>
         </article>
       </section>
