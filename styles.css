@@ -8,8 +8,9 @@
   --f_fontFamily : 'Be Vietnam Pro', sans-serif ;
 
   /* Colors */
-  --c_white : #FFFFF ;
+  --c_white : #FFF ;
   --c_gray100 : #F8FAFC ;
+  --c_gray50 : #CDD5E05C ;
 
   --c_BKGradientColor1 : #B64570 ;
   --c_BKGradientColor2 : #6E28BF ;
@@ -24,6 +25,14 @@
 
 form { all: unset ; }
 
+form label {
+  line-height : calc( var( --f_lineHeight ) + .5 ) ;
+  font-size : .875rem ;
+  color : var( --c_white ) ;
+}
+
+button { unset : all } ;
+
 
 html {
   font-size : var( --f_fontSizeBase ) ;
@@ -35,6 +44,8 @@ html {
 }
 
 .Body {
+  height : 100vh ;
+
   background: linear-gradient(135deg, hsla(337, 45%, 49%, 1) 0%, hsla(268, 65%, 45%, 1) 53%, hsla(230, 56%, 50%, 1) 100%);
   background: -moz-linear-gradient(135deg, hsla(337, 45%, 49%, 1) 0%, hsla(268, 65%, 45%, 1) 53%, hsla(230, 56%, 50%, 1) 100%);
   background: -webkit-linear-gradient(135deg, hsla(337, 45%, 49%, 1) 0%, hsla(268, 65%, 45%, 1) 53%, hsla(230, 56%, 50%, 1) 100%);
@@ -50,16 +61,20 @@ html {
 
 /* Comienzo Main */
 .Main {
-  height : 100vh ;
+  height : 100% ;
 
   text-align : center ;
 }
 
 .Main .section {
-  height : 100% ;
+  height : inherit ;
 }
 
-.Main .section .article {}
+.Main .section .article {
+  display : flex ;
+  flex-direction : column ;
+  align-items : center ;
+}
 
 .Main .section .article .article__title {
   font-size : 2rem ;
@@ -72,8 +87,50 @@ html {
 .Main .section .article .article__form {
   width : 980px ;
   height : 600px ;
+  
+  display : flex ;
+  flex-direction : column ;
+  
+  background-color : var( --c_gray50 ) ;
+
+  border-radius : 2rem ;
 }
 
+.Main .section .article .article__form .form__container {
+  display : flex ;
+  gap : 1rem ;
+}
+
+.Main .section .article .article__form .form__container div {
+  width : 50% ;
+  display : grid ;
+  place-items : center flex-start ;
+
+}
+
+  .Main .section .article .article__form .form__container :is(input, select) {
+  height : 2rem ;
+  width : 100% ;
+
+  border-radius : .5rem ;
+}
+
+
+.Main .section .article .article__form textarea {
+  width : 80% ;
+  height : 30% ;
+
+  margin : 0 auto ;
+
+  border-radius : .5rem ;
+}
+
+.Main .section .article .article__form .article__form--submit {
+  height : 3rem ;
+  width : 80% ;
+  padding : 1rem auto ;
+
+}
 /* Comienzo Footer */
 .Footer {}
 
