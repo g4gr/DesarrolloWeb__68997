@@ -40,7 +40,6 @@ html {
   font-weight : var( --f_fontWeight ) ;
   font-family : var( --f_fontFamily ) ;
 
-  color : var( --c_gray100 ) ;
 }
 
 .Body {
@@ -49,6 +48,8 @@ html {
   background: linear-gradient(135deg, hsla(337, 45%, 49%, 1) 0%, hsla(268, 65%, 45%, 1) 53%, hsla(230, 56%, 50%, 1) 100%);
   background: -moz-linear-gradient(135deg, hsla(337, 45%, 49%, 1) 0%, hsla(268, 65%, 45%, 1) 53%, hsla(230, 56%, 50%, 1) 100%);
   background: -webkit-linear-gradient(135deg, hsla(337, 45%, 49%, 1) 0%, hsla(268, 65%, 45%, 1) 53%, hsla(230, 56%, 50%, 1) 100%);
+  
+  color : var( --c_gray100 ) ;
 }
 
 /* Comienzo Header */
@@ -90,25 +91,37 @@ html {
   
   display : flex ;
   flex-direction : column ;
+  align-items : center ;
   
   background-color : var( --c_gray50 ) ;
 
   border-radius : 2rem ;
 }
 
-.Main .section .article .article__form .form__container {
+.Main .section .article .article__form .container {
+  width : 90% ;
+  height : 100% ;
+}
+
+.Main .section .article .article__form .container .form__container {
   display : flex ;
   gap : 1rem ;
 }
 
-.Main .section .article .article__form .form__container div {
+.Main .section .article .article__form .container .form__container:last-child textarea {
+  width : 100% ;
+  background-color : red ;
+}
+
+.Main .section .article .article__form .container .form__container div {
   width : 50% ;
   display : grid ;
   place-items : center flex-start ;
 
 }
 
-  .Main .section .article .article__form .form__container :is(input, select) {
+.Main .section .article .article__form .form__container :is(input, select) {
+                
   height : 2rem ;
   width : 100% ;
 

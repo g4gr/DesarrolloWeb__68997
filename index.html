@@ -29,41 +29,44 @@
             Fill out the form to view details and we’ll contact you as soon as possible.
           </p>
           <form class="article__form" action="ruta_del_servidor" method="post">
-            <!-- Linea 1 -->
-            <div class="form__container">
-              <div>
-                <label for="campo1">Name</label>
-                <input type="text" id="campo1" name="campo1">
-              </div>
+            <div class="container">
+              <!-- Linea 1 -->
+              <div class="form__container">
+                <div>
+                  <label for="campo1">Name</label>
+                  <input type="text" id="campo1" name="campo1">
+                </div>
 
-              <div>
-                <label for="campo2">Company Email</label>
-                <input type="text" id="campo2" name="campo2">
+                <div>
+                  <label for="campo2">Company Email</label>
+                  <input type="text" id="campo2" name="campo2">
+                </div>
               </div>
+                <!-- Linea 2 --> 
+              <div class="form__container" >
+                <div>
+                  <label for="lista1">Company Size</label>
+                  <select id="lista1" name="lista1">
+                      <option value="opcion1">50-100 employees</option>
+                      <option value="opcion2">101-500 employees</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="lista2">Subject</label>
+                  <select id="lista2" name="lista2">
+                      <option value="opcion1">Building Landing pages</option>
+                      <option value="opcion2">Bla bla</option>
+                  </select>
+                </div>
+              </div>
+              <!-- Campo de ingreso de texto -->
+              <div class="form__container" >
+                <label for="texto">Message</label>
+                <textarea id="texto" name="texto">500-100 employees</textarea>
+              </div>
+              <!-- Boton de enviar informacion -->
+              <button class="article__form--submit" type="submit" value="Contact Sales">Contact Sales</button>
             </div>
-              <!-- Linea 2 --> 
-            <div class="form__container" >
-              <div>
-                <label for="lista1">Company Size</label>
-                <select id="lista1" name="lista1">
-                    <option value="opcion1">50-100 employees</option>
-                    <option value="opcion2">101-500 employees</option>
-                </select>
-              </div>
-              <div>
-                <label for="lista2">Subject</label>
-                <select id="lista2" name="lista2">
-                    <option value="opcion1">Building Landing pages</option>
-                    <option value="opcion2">Bla bla</option>
-                </select>
-              </div>
-            </div>
-            <!-- Campo de ingreso de texto -->
-            <label for="texto">Message</label>
-            <textarea id="texto" name="texto">500-100 employees</textarea>
-
-            <!-- Boton de enviar informacion -->
-            <button class="article__form--submit" type="submit" value="Contact Sales">Contact Sales</button>
           </form>
         </article>
       </section>
